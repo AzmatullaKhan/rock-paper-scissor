@@ -5,7 +5,7 @@
     background-color: #15e9cf;
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
 }
 .cat_gif_holder_left{
     /* border: 1px solid #fff; */
@@ -34,7 +34,7 @@
     border: none;
     position: absolute;
     margin-left: -600px;
-    animation: cat_image_holder_animation 2s ease-out 0s;
+    animation: cat_image_holder_animation 2s ease-out;
 }
 .cat_image_holder_right{
     height: 700px;
@@ -43,13 +43,24 @@
     border: none;
     position: absolute;
     margin-right: -600px;
-    animation: cat_image_holder_animation 2s ease-in 0s;
+    animation: cat_image_holder_animation 2s ease-in;
 }
 
 @keyframes cat_image_holder_animation{
     0%{opacity: 0;}
     99%{opacity: 0;}
     100%{opacity: 1;}
+}
+
+button{
+    z-index: 10;
+    background-color: transparent;
+    color: black;
+    height: 50px;
+    width: 120px;
+    /* margin-top: -300px; */
+    margin-right: 10px;
+    cursor: pointer;
 }
 
 .hidden{
