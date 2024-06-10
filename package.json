@@ -1,5 +1,5 @@
 {
-  "name": "game",
+  "name": "rock-paper-scissor",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
